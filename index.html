@@ -5,21 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablice</title>
 </head>
-<style>table {border: 3px solid red }
+<style>table {border: 3px solid red;
+border-collapse: collapse; }
 th {border: 1px solid green }
 td {border: 1px solid blue }
 </style>
 <body>
     <table style="border: 1px solid black">
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <td>1</td><td>2</td><td>3</td>
         </tr>
         <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <td>4</td><td>5</td><td>6</td>
         </tr>
     </table> <hr>
     <table >
@@ -43,7 +40,7 @@ td {border: 1px solid blue }
             <td>5.</td><td>Ivan</td><td>Ivančević</td><td>Student</td><td>74</td>
         </tr>
     </table> <hr>
-    <table >
+    <table style="border: 3px solid blue; width: 100%; text-align: center;">
         <caption>Namirnice</caption>
     <thead>
 <tr>
@@ -66,7 +63,46 @@ td {border: 1px solid blue }
             <td>Ukupno:</td><td>9 kg</td><td>21,5 eura</td>
         </tr>
     </tfoot>
+    </table> <hr>
+    <table style="width: 100%;">
+        <caption>Tablica s vertikalnim headerom</caption>
+    <tr>
+        <th>Ime</th>
+        <td>Marko</td>
+        <td>Ivana</td>
+    </tr>
+
+    <tr>
+        <th>Prezime</th>
+        <td>Marković</td>
+        <td>Ivić Marković</td>
+    </tr>
+    <tr>
+        <th>Godine</th>
+        <td>20</td>
+        <td>22</td>
+    </tr>
+    </table> <hr>
+
+    <table border="1">
+        <tr>
+            <td rowspan="3" width="160">Prvi stupac</td>
+            <td width="160">Prvi redak</td>
+        </tr>
+        <tr>
+            <td >Drugi redak</td>
+            
+        </tr>
+        <tr>
+            <td >Treći redak</td>
+            
+        </tr>
+        
+
     </table>
+
+
+
 
     
 </body>
